@@ -6,7 +6,7 @@ export default function Contactform() {
      <h1 class="display-4 fw-bold lh-1 text-center left-animation">
         Contact <span class="text-purple">Me</span>
       </h1>
-      <div className=' row d-flex flex-md-row-reverse'  >
+      <div className=' row d-flex '  >
         <div className='col-sm-12 col-md-6 d-sm-12'>
           <img
             src='https://media.wired.com/photos/5a6a61938c669c70314b300d/master/w_2560%2Cc_limit/Google-Map-US_10.jpg'
