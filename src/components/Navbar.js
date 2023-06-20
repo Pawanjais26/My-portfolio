@@ -1,17 +1,18 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import "../index.css";
 
 export default function Navbar() {
+
   return (
     <div>
-      <nav class='navbar navbar-expand-lg purple text-white'>
-        <div class='container'>
-          <Link to='/' class='navbar-brand fs-2 fw-bold text-white'>
+      <nav className='navbar navbar-expand-lg purple text-white'>
+        <div className='container'>
+          <a href="/" className='navbar-brand fs-2 fw-bold text-white'>
             Shaurya
-          </Link>
+          </a>
           <button
-            class='navbar-toggler '
+            className='navbar-toggler '
             style={{ backgroundColor: "white", color: "grey" }}
             type='button'
             data-bs-toggle='collapse'
@@ -20,52 +21,58 @@ export default function Navbar() {
             aria-expanded='false'
             aria-label='Toggle navigation'
           >
-            <span class='navbar-toggler-icon'></span>
+            <span className='navbar-toggler-icon'></span>
           </button>
-          <div class='collapse navbar-collapse' id='navbarNav'>
-            <ul class='navbar-nav ms-auto pt-2 mb-1 '>
-              <li class='nav-item me-4'>
-                <Link
+          <div className='collapse navbar-collapse' id='navbarNav'>
+            <ul className='navbar-nav ms-auto pt-2 mb-1 '>
+              <li className='nav-item me-4'>
+                <NavLink
                   to='/'
-                  class='nav-link text-white fs-5 fw-semibold active'
+                  className='nav-link text-decoration-none fs-5 text-white fw-semibold'
                   aria-current='page'
                 >
                   Home
-                </Link>
+                </NavLink>
               </li>
-              <li class='nav-item me-4 '>
-                <Link
+              <li className='nav-item me-4 '>
+                <NavLink
                   to='/portfolio'
-                  class='nav-link text-white fs-5 fw-semibold'
+                  className='nav-link text-decoration-none fs-5 text-white fw-semibold'
                 >
                   Portfolio
-                </Link>
+                </NavLink>
               </li>
-              <li class='nav-item me-4'>
-                <Link to='/about' class='nav-link text-white fs-5 fw-semibold'>
+              <li className='nav-item me-4'>
+                <NavLink
+                  to='/about'
+                  className='nav-link text-decoration-none fs-5 text-white fw-semibold'
+                >
                   About
-                </Link>
+                </NavLink>
               </li>
-              <li class='nav-item me-4'>
-                <Link to='/skills' class='nav-link text-white fs-5 fw-semibold'>
+              <li className='nav-item me-4'>
+                <NavLink
+                  to='/skills'
+                  className='nav-link text-decoration-none fs-5 text-white fw-semibold'
+                >
                   Skills
-                </Link>
+                </NavLink>
               </li>
-              <li class='nav-item me-4'>
-                <Link
+              <li className='nav-item me-4'>
+                <NavLink
                   to='/certificate'
-                  class='nav-link text-white fs-5 fw-semibold'
+                  className='nav-link text-decoration-none fs-5 text-white fw-semibold'
                 >
                   Certificates
-                </Link>
+                </NavLink>
               </li>
-              <li class='nav-item me-4'>
-                <Link
+              <li className='nav-item me-4'>
+                <NavLink
                   to='/contact'
-                  class='nav-link text-white fs-5 fw-semibold'
+                  className='nav-link text-decoration-none fs-5 text-white fw-semibold'
                 >
                   Contact
-                </Link>
+                </NavLink>
               </li>
             </ul>
           </div>

@@ -3,14 +3,15 @@ import React from "react";
 export default function AboutPage() {
   return (
     <div>
-      <div className='container my-5' style={{ backgroundColor: "#E5D1FA" }}>
+      <div className='container my-5' >
         <div className=' row align-items-center '>
-          <div className='col-12 col-lg-6 col-md-6 col-sm-12 my-4 text-center text-md-start '>
-            <div className='mt-5 '>
-              <h1 class='display-4 fw-bold lh-1  pb-2 ps-5 left-animation'>
+        <h1 class='display-4 fw-bold lh-1 text-center  left-animation'>
                 About <span className="text-purple">Me</span>
               </h1>
-              <ul className='py-3 px-5 heading4'>
+          <div className='col-12 col-lg-6 col-md-6 col-sm-12 my-4 text-center text-md-start '>
+            <div className='mt-5 '>
+        
+              <ul className='py-3 px-5 heading4' style={{ backgroundColor: "#E5D1FA" }}>
                 <li className='my-4 fs-5 lead ' style={{ listStyle: "disc" }}>
                   Hi, I am Pawan .A self-taught passionate Full Stack Web
                   Developer from India. I have made so many projects, you could

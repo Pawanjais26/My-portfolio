@@ -9,6 +9,7 @@ import Certificate from "./routes/Certificate";
 import Portfolio from "./routes/Portfolio";
 
 function App() {
+  
   return (
     <>
       <Routes>

@@ -9,10 +9,10 @@ export default function Skills() {
     <>
       <Navbar />
       <div >
-        <div className='row container mx-auto my-5 p-5' style={{ backgroundColor: "#E5D1FA" }}>
           <h1 class='display-4 fw-bold lh-1 text-center my-2 pt-5 left-animation'>
             My <span class='text-purple'>Skills</span>
           </h1>
+        <div className='row container mx-auto my-5 p-5' style={{ backgroundColor: "#E5D1FA" }}>
           <div className='col-12 col-md-6 col-lg-4  my-5 text-center heading2'>
             <SkillsCard
               Heading='Front-End'

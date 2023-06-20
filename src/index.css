@@ -12,16 +12,25 @@ code {
     monospace;
 }
 
-li{
+li {
   list-style: none;
+  
+}
+
+li .project-title {
+  background-color: #000;
+}
+
+li .nav-link:hover {
+
+  color: #000 !important;
+  background-color: #ffffff;
+  border-radius: 5px;
+  padding: 0.5rem 1.2rem;
+  
  
 }
 
-.nav-item a:hover{
-  color: #000 !important;
-  background-color: white;
-  transition: all 0.3s ease-in-out;
-}
 
 .purple {
   background-color: #8f43ee;
@@ -97,8 +106,7 @@ li{
 }
 
 .text {
-  color: #545B77;
- 
+  color: #545b77;
 }
 .text:hover {
   color: #8f43ee;
@@ -106,12 +114,17 @@ li{
   font-weight: 700;
 }
 
+
+
 .active {
-  background-color: #8f43ee;
+  display: inline-block;
   color: #000 !important;
   background-color: #ffffff;
   border-radius: 5px;
+  padding: 0.5rem 1.2rem;
+ 
 }
+
 
 .left-animation {
   animation: fadeInUp 0.7s ease-in-out;
@@ -120,7 +133,7 @@ li{
 @keyframes fadeInUp {
   0% {
     opacity: 0;
-    transform: translateX(-140px)
+    transform: translateX(-140px);
   }
 
   100% {
@@ -129,19 +142,19 @@ li{
   }
 }
 
-.heading1{
+.heading1 {
   animation: fadeIn 0.5s ease-in-out 0.2s;
   animation-fill-mode: both; /*stop from showing at start*/
 }
-.heading2{
+.heading2 {
   animation: fadeIn 0.5s ease-in-out 0.4s;
   animation-fill-mode: both; /*stop from showing at start*/
 }
-.heading3{
+.heading3 {
   animation: fadeIn 0.5s ease-in-out 0.6s;
   animation-fill-mode: both; /*stop from showing at start*/
 }
-.heading4{
+.heading4 {
   animation: fadeInUp 0.5s ease-in-out 0.8s;
   animation-fill-mode: both; /*stop from showing at start*/
 }
@@ -159,6 +172,7 @@ li{
 }
 
 
+
 @media (max-width: 768px) {
   .showcase-content {
     text-align: center;
@@ -168,4 +182,16 @@ li{
     width: 50%;
     margin: auto;
   }
+  .project-title {
+    font-size: 17px !important;
+    font-weight: 500;
+    line-height: 1.5em;
+    height: 3em;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 100%;
+  }
+
+
 }
